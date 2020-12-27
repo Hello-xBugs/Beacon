@@ -28,6 +28,7 @@ typedef struct
 
 } BEACON_INSTANCE, *PBEACON_INSTANCE;
 
+#include "setting.h"
 #include "tebpeb.h"
 #include "hash.h"
 #include "peb.h"

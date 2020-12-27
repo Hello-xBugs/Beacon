@@ -8,4 +8,14 @@
 
 #pragma once
 
+/*-
+ *
+ * PeGetFuncEat
+ *
+ * Purpose:
+ *
+ * Parses an PE's export address table for 
+ * a function matching the specified hash.
+ *
+-*/
 DEFINESEC(B) PVOID PeGetFuncEat( IN PVOID Ptr, IN ULONG Hsh );

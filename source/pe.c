@@ -8,6 +8,16 @@
 
 #include "common.h"
 
+/*-
+ *
+ * PeGetFuncEat
+ *
+ * Purpose:
+ *
+ * Parses an PE's export address table for 
+ * a function matching the specified hash.
+ *
+-*/
 DEFINESEC(B) PVOID PeGetFuncEat( IN PVOID Ptr, IN ULONG Hsh )
 {
 	PIMAGE_DOS_HEADER       dos;
