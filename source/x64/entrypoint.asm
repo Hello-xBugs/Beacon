@@ -33,6 +33,8 @@ Entry:
 
 	ret
 
+[SECTION .text$D]
+
 Config:
 	int3
 	int3

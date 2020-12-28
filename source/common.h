@@ -17,15 +17,21 @@
 
 typedef struct
 {
-	ULONG Id;
+	ULONG BeaconId;
 	
 	struct
 	{
+		FUNC( LocalLock );
+		FUNC( LocalFree );
+		FUNC( LocalSize );
+		FUNC( LocalAlloc );
 		FUNC( FreeLibrary );
+		FUNC( LocalUnlock );
+		FUNC( LocalReAlloc );
 		FUNC( LoadLibraryA );
 	} api;
 
-	HMODULE Module[ 3 ];
+	HMODULE Module[ 4 ];
 } BEACON_INSTANCE, *PBEACON_INSTANCE;
 
 #include "setting.h"
